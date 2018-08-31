@@ -76,6 +76,10 @@ namespace STECCommon.Equipment.ULVAC.Tests
             var command = new ISG1Command(":01n6F");
         }
 
-
+        [TestMethod()]
+        public void FailTest()
+        {
+            Assert.AreEqual(10, 20, "単体テスト失敗テスト");
+        }
     }
 }
